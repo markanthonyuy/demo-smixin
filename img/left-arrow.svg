@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="38px" viewBox="0 0 20 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3 Copy@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="6e-05 -8e-05 19.87186 -8e-05 19.87186 37.1202 6e-05 37.1202"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Compact" transform="translate(-179.000000, -4681.000000)">
+            <g id="Group-3-Copy" transform="translate(189.000000, 4700.000000) rotate(-180.000000) translate(-189.000000, -4700.000000) translate(179.000000, 4681.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M2.24076,36.7358 C1.98436,36.9922 1.66396,37.1202 1.31236,37.1202 C0.95916,37.1202 0.64076,36.9922 0.38436,36.7358 C-0.12804,36.2238 -0.12804,35.3922 0.38436,34.8794 L16.70476,18.559 L0.38436,2.2406 C-0.12804,1.7278 -0.12804,0.895 0.38436,0.3842 C0.89516,-0.1282 1.72796,-0.1282 2.24076,0.3842 L19.48756,17.631 C19.99996,18.1434 19.99996,18.9762 19.48756,19.4874 L2.24076,36.7358 Z" id="Fill-1" fill="#9B9B9B" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

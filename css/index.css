@@ -1110,15 +1110,15 @@ h2 {
 }
 
 .wrap .product > .top .banner.combi {
-  background: url('../../img/combi-hero.jpg') no-repeat center center;
+  background: url('/../img/combi-hero.jpg') no-repeat center center;
 }
 
 .wrap .product > .top .banner.comfort {
-  background: url('../../img/comfort-hero.jpg') no-repeat center center;
+  background: url('/../img/comfort-hero.jpg') no-repeat center center;
 }
 
 .wrap .product > .top .banner.compact {
-  background: url('../../img/compact-hero.jpg') no-repeat center center;
+  background: url('/../img/compact-hero.jpg') no-repeat center center;
 }
 
 .wrap .product .discover {

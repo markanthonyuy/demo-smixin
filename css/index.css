@@ -1366,6 +1366,10 @@ h2 {
     width: 250px;
   }
 
+  .bottom-page-nav, .bottom-page-nav.for-products {
+    width: 100%;
+  }
+
   .main-footer .bottom {
     width: 100%;
   }

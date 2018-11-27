@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="https://use.typekit.net/aqa5wzu.css">
     <title>Smixin</title>
   </head>
@@ -135,13 +136,23 @@
         <div class="how-it-works">
           <h2>How it Works?</h2>
           <div class="steps d-flex justify-content-center flex-lg-row flex-md-column flex-sm-column flex-column">
-            <div class="step more-padding">
+            <div class="step step-1 more-padding" data-aos="fade-up"
+                              data-aos-offset="0"
+                              data-aos-delay="0"
+                              data-aos-duration="500"
+                              data-aos-easing="ease-in-out"
+                              data-aos-anchor-placement="top-center">
               <figure>
                 <img src="img/step-1.png">
               </figure>
               <p>Sensor Starts<br> Washing Cycle</p>
             </div>
-            <div class="step more-padding">
+            <div class="step more-padding" data-aos="fade-up"
+                              data-aos-anchor=".step-1"
+                              data-aos-delay="300"
+                              data-aos-duration="500"
+                              data-aos-easing="ease-in-out"
+                              data-aos-anchor-placement="top-center">
               <figure>
                 <img src="img/step-2.png">
               </figure>
@@ -220,6 +231,7 @@
     <script src="js/jquery-rwd-image-maps.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
     <script>
       $(function() {

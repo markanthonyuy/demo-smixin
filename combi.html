@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="https://use.typekit.net/aqa5wzu.css">
     <title>Smixin</title>
   </head>
@@ -162,27 +163,47 @@
         <div class="how-it-works">
           <h2>How it Works?</h2>
           <div class="steps d-flex justify-content-between flex-lg-row flex-md-column flex-sm-column flex-column">
-            <div class="step">
+            <div class="step step-1" data-aos="fade-up"
+                              data-aos-offset="0"
+                              data-aos-delay="0"
+                              data-aos-duration="500"
+                              data-aos-easing="ease-in-out"
+                              data-aos-anchor-placement="top-center">
               <figure>
                 <img src="img/step-1.png">
               </figure>
               <p>Sensor Starts<br> Washing Cycle</p>
             </div>
-            <div class="step">
+            <div class="step step-2" data-aos="fade-up"
+                              data-aos-anchor=".step-1"
+                              data-aos-delay="300"
+                              data-aos-duration="500"
+                              data-aos-easing="ease-in-out"
+                              data-aos-anchor-placement="top-center">
               <figure>
                 <img src="img/step-2.png">
               </figure>
               <p>Dispense<br> Soap-Water-Air Emulsion</p>
               <span>*No pre-wetting needed!</span>
             </div>
-            <div class="step">
+            <div class="step step-3" data-aos="fade-up"
+                              data-aos-anchor=".step-2"
+                              data-aos-delay="600"
+                              data-aos-duration="500"
+                              data-aos-easing="ease-in-out"
+                              data-aos-anchor-placement="top-center">
               <figure>
                 <img src="img/step-3.png">
               </figure>
               <p>Water-Air Emulsion assures<br> an efficient rinsing</p>
               <span>* The rinsing time as well as other<br> parameters can be customised.</span>
             </div>
-            <div class="step">
+            <div class="step step-4" data-aos="fade-up"
+                              data-aos-anchor=".step-3"
+                              data-aos-delay="900"
+                              data-aos-duration="500"
+                              data-aos-easing="ease-in-out"
+                              data-aos-anchor-placement="top-center">
               <figure>
                 <img src="img/step-4.png">
               </figure>
@@ -266,6 +287,7 @@
     <script src="js/jquery-rwd-image-maps.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
     <script>
       $(function() {

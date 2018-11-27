@@ -101,8 +101,4 @@ $(function() {
     $(this).addClass('active');
     $('form input[name="product"]').val($(this).data('product'));
   });
-
-  AOS.init({
-     once: true
-  });
 });

@@ -893,6 +893,8 @@ h2 {
   .wrap .what-is-smixin {
     width: 420px;
     margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
   }
   
   .wrap .what-is-smixin .top {
@@ -902,6 +904,17 @@ h2 {
   .wrap .what-is-smixin .top .desc {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 900px) {
+
+  .wrap .smart-head .image .image-wrap {
+    width: 100%;
+  }
+
+  .wrap .smart-head .image .image-wrap img {
+    width: 100%;
+  } 
 }
 
 @media screen and (max-width: 550px) {
@@ -1110,15 +1123,15 @@ h2 {
 }
 
 .wrap .product > .top .banner.combi {
-  background: url('/../img/combi-hero.jpg') no-repeat center center;
+  background: url('/demo-smixin/img/combi-hero.jpg') no-repeat center center;
 }
 
 .wrap .product > .top .banner.comfort {
-  background: url('/../img/comfort-hero.jpg') no-repeat center center;
+  background: url('/demo-smixin/img/comfort-hero.jpg') no-repeat center center;
 }
 
 .wrap .product > .top .banner.compact {
-  background: url('/../img/compact-hero.jpg') no-repeat center center;
+  background: url('/demo-smixin/img/compact-hero.jpg') no-repeat center center;
 }
 
 .wrap .product .discover {

@@ -18,12 +18,12 @@ p {
 }
 
 a {
-  color: #066580;
+  color: #006580;
   letter-spacing: 1px;
 }
 
 a:hover {
-  color: #066580;
+  color: #006580;
 }
 
 input:-webkit-autofill,
@@ -44,6 +44,10 @@ input:-webkit-autofill:active  {
 }
 :-moz-placeholder { /* Firefox 18- */
   color: #8e8e8e;
+}
+
+.blue {
+  color: #006BA3;
 }
 
 /* ===============================================================*/
@@ -78,10 +82,10 @@ input:-webkit-autofill:active  {
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #066580; }
+    background-color: #006580; }
 
 .hamburger-box {
-  width: 35px;
+  width: 30px;
   height: 24px;
   display: inline-block;
   position: relative; }
@@ -91,9 +95,9 @@ input:-webkit-autofill:active  {
   top: 50%;
   margin-top: -2px; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 35px;
+    width: 30px;
     height: 4px;
-    background-color: #066580;
+    background-color: #006580;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -134,7 +138,7 @@ input:-webkit-autofill:active  {
 
 .main-header {
   width: 100%;
-  min-height: 1080px;
+  max-height: 900px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -161,7 +165,7 @@ input:-webkit-autofill:active  {
 }
 
 .main-header .top .top-wrap h1 {
-  margin: 0;
+  margin: 0 0 0 77px;
 }
 
 .main-header .top .top-wrap h1 a img {
@@ -185,7 +189,7 @@ input:-webkit-autofill:active  {
   padding: 0 10px;
   color: #717171;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -201,7 +205,7 @@ input:-webkit-autofill:active  {
 }
 
 .main-header .top .top-wrap nav ul li:hover a {
-  color: #066580;
+  color: #006580;
 }
 
 .main-header .top .top-wrap nav ul li .sub-nav {
@@ -229,13 +233,13 @@ input:-webkit-autofill:active  {
 }
 
 .main-header .top .top-wrap nav ul li:hover > .sub-nav a:hover {
-  color: #066580;
+  color: #006580;
 }
 
 .main-header .top .top-wrap nav .screen {
   margin-left: 10px;
   padding: 0 15px;
-  border-left: 1px solid #066580;
+  border-left: 1px solid #006580;
 }
 
 .main-header .top .top-wrap nav .screen a {
@@ -250,21 +254,21 @@ input:-webkit-autofill:active  {
   position: relative;
   max-width: 1400px;
   width: 100%;
-  height: 955px;
+  height: 771px;
   margin: 0 auto;
 }
 
 .main-header .body .tagline {
   position: absolute;
-  top: 400px;
-  left: 40px;
+  top: 300px;
+  left: 80px;
 }
 
 .main-header .body .tagline .big {
   font-size: 48px;
   font-weight: 700;
   line-height: 52px;
-  color: #066580;
+  color: #006580;
 }
 
 .main-header .body .tagline p {
@@ -273,6 +277,8 @@ input:-webkit-autofill:active  {
 
 .main-header .body .tagline .subtext {
   color: #000;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .main-header .body .bottom {
@@ -296,7 +302,7 @@ input:-webkit-autofill:active  {
 }
 
 .main-header .body .bottom .bg-switch.active .bar {
-  background: #066580;
+  background: #006580;
 }
 
 .main-header .body .bottom .bg-switch .bar {
@@ -319,20 +325,21 @@ input:-webkit-autofill:active  {
 h2 {
   padding: 7px 0;
   display: inline-block;
-  border-bottom: 2px solid #066580;
-  font-size: 20px;
-  color: #066580;
+  border-bottom: 2px solid #006580;
+  font-size: 22px;
+  color: #006580;
 }
 
 .btn {
   padding: 5px 18px;
-  border: 1px solid #066580;
+  border: 1px solid #006580;
   border-radius: 12px;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .btn:hover {
-  background: #066580;
+  background: #006580;
   color: #fff;
 }
 
@@ -346,7 +353,11 @@ h2 {
   font-size: 22px;
   line-height: 26px;
   font-weight: 500;
-  color: #066580;
+  color: #006580;
+}
+
+.wrap .what span {
+  font-weight: 600;
 }
 
 .wrap .our-products {
@@ -374,7 +385,7 @@ h2 {
   padding: 0 0 5px;
   font-size: 18px;
   font-weight: 700;
-  color: #066580;
+  color: #006580;
 }
 
 .wrap .our-products .our-products-wrap .products .product figure img {
@@ -382,11 +393,11 @@ h2 {
 }
 
 .wrap .our-products .our-products-wrap .products .product p {
-  margin: 30px 0 40px;
+  margin: 30px 0 20px;
   font-size: 15px;
   font-weight: 500;
   line-height: 18px;
-  color: #066580;
+  color: #006580;
 }
 
 .wrap .features {
@@ -425,13 +436,17 @@ h2 {
   margin-bottom: 45px;
 }
 
+.wrap .features .features-body .features-body-wrap .top .less-soap figure img:first-child {
+  margin-right: 30px;
+}
+
 .wrap .features .features-body .features-body-wrap .top .less-paper figure {
   margin-bottom: 55px;
 }
 
 .wrap .features .features-body .features-body-wrap .top .less-soap .footnote {
   display: block;
-  margin-top: 20px;
+  margin-top: 8px;
   font-size: 11px;
   font-weight: 400;
 }
@@ -448,7 +463,7 @@ h2 {
 .wrap .features .features-body .features-body-wrap .top span, .wrap .features .features-body .features-body-wrap .bottom span {
   font-size: 18px;
   font-weight: 500;
-  color: #066580;
+  color: #006580;
   line-height: 18px;
 }
 
@@ -464,10 +479,6 @@ h2 {
   padding: 20px 0 18px;
 }
 
-.wrap .features .features-body .features-body-wrap .bottom .remote figure img {
-  width: 90px;
-}
-
 .wrap .mission {
   padding: 40px 0 45px;
   background: #f1f1f1;
@@ -479,7 +490,7 @@ h2 {
   font-size: 22px;
   line-height: 26px;
   font-weight: 700;
-  color: #066580;
+  color: #006580;
 }
 
 /* ===============================================================*/
@@ -508,13 +519,28 @@ h2 {
   color: #fff;
 }
 
+.main-footer .top div {
+  padding: 20px 0 10px; 
+  color: #fff;
+  display: none;
+}
+
 .main-footer .top ul li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.main-footer .top div span {
   display: inline-block;
   font-size: 14px;
 }
 
 .main-footer .top ul li a {
   padding: 0 10px;
+}
+
+.main-footer .top div span {
+  padding: 4px 10px;
 }
 
 .main-footer .top p {
@@ -555,32 +581,38 @@ h2 {
 /* ===============================================================*/
 
 .m-menu {
+  position: absolute;
+  width: 100%;
   padding: 10px;
   display: none;
+  background: rgba(255, 255, 255, .6);
+  z-index: 1;
 }
 
 .m-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  border-left: 5px solid #066580;
 }
 
 .m-menu ul li {
   width: 100%;
+  margin-bottom: 20px;
   display: block;
 }
 
 .m-menu ul li a {
-  padding: 5px 10px;
+  padding: 3px 10px;
   width: 100%;
   display: block;
   text-decoration: none;
+  color: #717171;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .m-menu ul li a:hover {
-  background: #066580;
-  color: #fff;
+  color: #006580;
 }
 
 .m-menu ul li .sub-nav {
@@ -592,7 +624,8 @@ h2 {
 }
 
 .m-menu ul li:hover .sub-nav a {
-  padding: 5px 20px 5px 30px;
+  padding: 0 20px 0 10px;
+  font-size: 14px;
 }
 
 /* ===============================================================*/
@@ -689,12 +722,12 @@ h2 {
 
 .wrap .contact-us .contact-form .products > div:hover figure, 
 .wrap .contact-us .contact-form .products > div.active figure {
-  border: 1px solid #066580;
+  border: 1px solid #006580;
 }
 
 .wrap .contact-us .contact-form .products > div:hover span, 
 .wrap .contact-us .contact-form .products > div.active span {
-  color: #066580;
+  color: #006580;
 }
 
 .wrap .contact-us .contact-form .products span {
@@ -745,20 +778,20 @@ h2 {
 }
 
 .wrap .contact-us .contact-form form input:focus {
-  border: 1px solid #066580;
+  border: 1px solid #006580;
 }
 
 .wrap .contact-us .contact-form form button {
   margin-top: 20px;
   padding: 5px 40px;
   background: #fff;
-  color: #066580;
+  color: #006580;
   font-weight: 500;
   font-size: 14px;
 }
 
 .wrap .contact-us .contact-form form button:hover {
-  background: #066580;
+  background: #006580;
   color: #fff;
 }
 
@@ -802,7 +835,7 @@ h2 {
   font-size: 22px;
   line-height: 30px;
   font-weight: 600;
-  color: #066580;
+  color: #006580;
 }
 
 .wrap .what-is-smixin .top .desc p {
@@ -881,7 +914,7 @@ h2 {
 
 .wrap .smart-head .image .image-wrap .parts span {
   padding: 0 5px;
-  color: #066580;
+  color: #006580;
 }
 
 .wrap .smart-head .image .image-wrap .parts img {
@@ -987,7 +1020,7 @@ h2 {
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
-  color: #066580;
+  color: #006580;
 }
 
 .wrap .techopacks .techopacks-wrap .desc > div .footnote {
@@ -1008,7 +1041,7 @@ h2 {
 
 .bottom-page-nav a:hover {
   text-decoration: none;
-  color: #066580;
+  color: #006580;
 }
 
 .bottom-page-nav a svg {
@@ -1016,7 +1049,7 @@ h2 {
 }
 
 .bottom-page-nav a:hover svg path {
-  fill: #066580;
+  fill: #006580;
 }
 
 .bottom-page-nav a .text {
@@ -1123,15 +1156,16 @@ h2 {
 }
 
 .wrap .product > .top .banner.combi {
-  background: url('/demo-smixin/img/combi-hero.jpg') no-repeat center center;
+  /*background: url('/demo-smixin/img/combi-hero.jpg') no-repeat center center;*/
+  background: url('/../img/combi-hero.jpg') no-repeat center center;
 }
 
 .wrap .product > .top .banner.comfort {
-  background: url('/demo-smixin/img/comfort-hero.jpg') no-repeat center center;
+  background: url('/../img/comfort-hero.jpg') no-repeat center center;
 }
 
 .wrap .product > .top .banner.compact {
-  background: url('/demo-smixin/img/compact-hero.jpg') no-repeat center center;
+  background: url('/../img/compact-hero.jpg') no-repeat center center;
 }
 
 .wrap .product .discover {
@@ -1191,13 +1225,13 @@ h2 {
   margin: 0;
   line-height: 20px;
   font-weight: 500;
-  color: #066580;
+  color: #006580;
 }
 
 .wrap .product .how-it-works .steps .step span {
   display: inline-block;
   font-size: 12px;
-  color: #066580;
+  color: #006580;
   font-style: italic;
   line-height: 16px;
   font-weight: 500;
@@ -1250,7 +1284,7 @@ h2 {
   font-size: 22px;
   font-weight: 500;
   line-height: 24px;
-  color: #066580;
+  color: #006580;
 }
 
 .wrap .product .key-features .key-features-wrap .info p img.ce {
@@ -1270,11 +1304,11 @@ h2 {
 .wrap .product .key-features .key-features-wrap .info .buttons button {
   width: 40%;
   padding: 8px 15px;
-  border: 2px solid #066580;
+  border: 2px solid #006580;
   border-radius: 12px;
   font-size: 15px;
   background: #fff;
-  color: #066580;
+  color: #006580;
   font-weight: 500;
   cursor: pointer;
 }
@@ -1284,7 +1318,7 @@ h2 {
 }
 
 .wrap .product .key-features .key-features-wrap .info .buttons button:hover {
-  background: #066580;
+  background: #006580;
   color: #fff;
 }
 
@@ -1402,8 +1436,8 @@ h2 {
   }
 
   .main-header .top .top-wrap h1 {
-    margin: 0 auto;
-    text-align: center;
+    margin: 0;
+    text-align: left;
   }
 
   .main-header .top .top-wrap h1 a {
@@ -1411,7 +1445,7 @@ h2 {
   }
 
   .main-header .top .top-wrap h1 a img {
-    width: 200px;
+    width: 120px;
   }
 
   .main-header .top .top-wrap nav {
@@ -1470,5 +1504,49 @@ h2 {
   .main-footer .bottom .popfolio {
     position: static;
     display: block;
+  }
+
+  .hamburger-box, .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 28px;
+  }
+
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    height: 3px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+
+  .wrap .mission p {
+    font-size: 16px;
+  }
+
+  .main-footer .top ul {
+    display: none;
+  }
+
+  .main-footer .top div {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 415px) {
+
+  .wrap .what p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .wrap .mission p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .wrap .what p {
+    font-size: 16px;
   }
 }

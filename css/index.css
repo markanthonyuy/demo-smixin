@@ -184,6 +184,7 @@ input:-webkit-autofill:active  {
   z-index: 2;
 }
 
+
 .main-header .top .top-wrap nav ul li a {
   position: relative;
   padding: 0 10px;
@@ -191,6 +192,7 @@ input:-webkit-autofill:active  {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
+  z-index: 1;
 }
 
 .main-header .top .top-wrap nav ul li:hover a .bar {
@@ -212,7 +214,8 @@ input:-webkit-autofill:active  {
   position: absolute;
   width: 200px;
   top: 0;
-  padding-top: 70px;
+  margin-top: 20px;
+  padding-top: 50px;
   display: none;
 }
 
@@ -589,6 +592,10 @@ h2 {
   z-index: 1;
 }
 
+.pages .m-menu {
+  background: #fff;
+}
+
 .m-menu ul {
   margin: 0;
   padding: 0;
@@ -640,35 +647,22 @@ h2 {
   padding-bottom: 180px;
 }
 
-@media screen and (max-width: 990px) {
-  .wrap .contact-us {
-    width: 550px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  .wrap .contact-us {
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 .wrap .contact-us .info {
   width: 300px;
 }
 
 .wrap .contact-us .info h2 {
   margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .wrap .contact-us .info address, 
 .wrap .contact-us .info span {
   display: block;
-  font-size: 14px;
   font-weight: 500;
   line-height: 18px;
+  color: #000;
 }
 
 .wrap .contact-us .info span {
@@ -686,15 +680,10 @@ h2 {
   margin-top: 65px;
 }
 
-@media screen and (max-width: 570px) {
-  .wrap .contact-us .contact-form {
-    width: 100%;
-  }
-}
-
 .wrap .contact-us .contact-form p {
   margin-bottom: 20px;
   font-size: 18px;
+  font-weight: 500;
   color: #000;
 }
 
@@ -722,7 +711,7 @@ h2 {
 
 .wrap .contact-us .contact-form .products > div:hover figure, 
 .wrap .contact-us .contact-form .products > div.active figure {
-  border: 1px solid #006580;
+  border: 2px solid #006580;
 }
 
 .wrap .contact-us .contact-form .products > div:hover span, 
@@ -732,7 +721,8 @@ h2 {
 
 .wrap .contact-us .contact-form .products span {
   display: block;
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: 600;
   color: #a5a5a5;
 }
 
@@ -741,23 +731,17 @@ h2 {
   display: inline-block;
   margin-bottom: 3px;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
 }
 
 .wrap .contact-us .contact-form .products figure img {
   width: 150px;
 }
 
-@media screen and (max-width: 768px) {
-
-  .wrap .contact-us .contact-form .products figure img {
-    width: 200px;
-  }
-}
-
 .wrap .contact-us .contact-form .leave {
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .wrap .contact-us .contact-form form {
@@ -795,10 +779,49 @@ h2 {
   color: #fff;
 }
 
+@media screen and (max-width: 990px) {
+  .wrap .contact-us {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .wrap .contact-us .info, .wrap .contact-us .contact-form {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
+
+  .wrap .contact-us .contact-form .products figure img {
+    width: 200px;
+  }
 
   .wrap .contact-us .contact-form form button {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .wrap .contact-us {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .wrap .contact-us .info {
+    width: 100%;
+  }
+  
+  .wrap .contact-us .contact-form {
+    width: 100%;
+  }
+
+  .wrap .contact-us .contact-form p {
+    font-size: 15px;
   }
 }
 
@@ -823,6 +846,7 @@ h2 {
 .wrap .what-is-smixin .top h2 {
   font-size: 40px;
   border-bottom: none;
+  font-weight: 900;
 }
 
 .wrap .what-is-smixin .top .desc {
@@ -839,9 +863,12 @@ h2 {
 }
 
 .wrap .what-is-smixin .top .desc p {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   line-height: 20px;
+  font-size: 20px;
   font-weight: 300;
+  color: #4A4A4A;
 }
 
 .wrap .smart-head {
@@ -852,9 +879,9 @@ h2 {
 
 .wrap .smart-head h2 {
   margin-bottom: 50px;
-  font-size: 34px;
+  font-size: 40px;
   border-bottom: none;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .wrap .smart-head .image .image-wrap {
@@ -868,7 +895,7 @@ h2 {
 }
 
 .wrap .smart-head .image .image-wrap > img {
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
 }
 
@@ -924,7 +951,7 @@ h2 {
 
 @media screen and (max-width: 990px) {
   .wrap .what-is-smixin {
-    width: 420px;
+    width: 500px;
     margin: 0 auto;
     padding-top: 30px;
     text-align: center;
@@ -956,8 +983,34 @@ h2 {
     margin: 0 auto;
   }
 
+  .wrap .what-is-smixin .top h2 {
+    font-size: 36px;
+  }
+
   .wrap .what-is-smixin .top .desc {
     width: 100%;
+  }
+  
+  .wrap .what-is-smixin .top .desc .big {
+    font-size: 18px;
+  }
+
+  .wrap .what-is-smixin .top .desc p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  
+  .wrap .what-is-smixin .top .desc .big {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .wrap .what-is-smixin .top .desc p {
+    font-size: 14px;
+    letter-spacing: 0;
   }
 }
 
@@ -1110,7 +1163,7 @@ h2 {
 /* ===============================================================*/
 /* ===============================================================*/
 
-.wrap .product {
+.wrap > .product {
   padding: 40px 0;
 }
 

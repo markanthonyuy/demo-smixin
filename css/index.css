@@ -1393,7 +1393,7 @@ h2 {
 }
 
 .wrap .product .key-features .key-features-wrap .image img {
-  width: 120%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -1673,7 +1673,8 @@ h2 {
   }
 
   .wrap .our-products .our-products-wrap .products .product figure img {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
   }
 
   .wrap .features .features-body .features-body-wrap .top div, 
@@ -1691,6 +1692,16 @@ h2 {
 
   .no-margin-bot-978 {
     margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .main-header .body .tagline {
+    top: 250px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
   }
 }
 

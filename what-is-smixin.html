@@ -110,51 +110,6 @@
         <div class="image">
           <div class="image-wrap">
             <img src="img/soap-poach.png" usemap="#soap">
-
-            <map name="soap">
-              <area target="" data-target=".soap-inlet" alt="Soap Inlet" title="Soap Inlet" href="#" coords="246,313,285,291" shape="rect">
-              <area target="" data-target=".water-inlet" alt="Water Inlet" title="Water Inlet" href="#" coords="204,610,173,584" shape="rect">
-              <area target="" data-target=".spout-inlet" alt="Spout Inlet" title="Spout Inlet" href="#" coords="193,626,229,651" shape="rect">
-              <area target="" data-target=".air-inlet" alt="Air Inlet" title="Air Inlet" href="#" coords="291,850,323,870" shape="rect">
-              <area target="" data-target=".mixing-chamber" alt="Mixing Chamber" title="Mixing Chamber" href="#" coords="318,740,368,764" shape="rect">
-              <area target="" data-target=".soap-pump" alt="Soap Pump" title="Soap Pump" href="#" coords="457,585,486,611" shape="rect">
-              <area target="" data-target=".smart-mixing" alt="Smart Mixing Unit" title="Smart Mixing Unit" href="#" coords="403,405,446,437" shape="rect">
-            </map>
-
-            <div class="parts soap-inlet">
-              <span>Soap Inlet</span>
-              <img src="img/line-point-right.png">
-            </div>
-
-            <div class="parts water-inlet">
-              <span>Water Inlet</span>
-              <img src="img/line-point-right.png">
-            </div>
-
-            <div class="parts air-inlet">
-              <span>Air Inlet</span>
-              <img src="img/line-point-right.png">
-            </div>
-
-            <div class="parts spout-inlet">
-              <span>Spout Inlet</span>
-              <img src="img/line-point-right.png">
-            </div>
-            
-            <div class="parts smart-mixing">
-              <img src="img/line-point-left.png">
-              <span>Smart Mixing Unit</span>
-            </div>
-            
-            <div class="parts soap-pump">
-              <img src="img/line-point-left.png">
-              <span>Soap Pump</span>
-            </div>
-            
-            <div class="parts mixing-chamber">
-              <img src="img/line-point-left.png">
-              <span>Mixing Chamber</span>
-            </div>
           </div>
         </div>
       </div>
@@ -191,22 +146,8 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.slim.js"></script>
-    <script src="js/jquery-rwd-image-maps.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      $(function() {
-        $('img[usemap]').rwdImageMaps();
-
-        $('area').on('mouseover', function(e) {
-          e.preventDefault();
-          $('.parts').hide();
-          $($(this).data('target')).fadeIn();
-        });
-
-        $('.parts').hide();
-      })
-    </script>
   </body>
 </html>

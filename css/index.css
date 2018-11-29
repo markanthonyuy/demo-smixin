@@ -1248,8 +1248,8 @@ h2 {
 
 .wrap .product > .top .banner.combi {
   position: relative;
-  /*background: url('/demo-smixin/img/combi-hero.jpg') no-repeat center center;*/
-  background: url('/../img/combi-hero.jpg') no-repeat center center;
+  background: url('/demo-smixin/img/combi-hero.jpg') no-repeat center center;
+  /*background: url('/../img/combi-hero.jpg') no-repeat center center;*/
 }
 
 .wrap .product > .top .banner .text {
@@ -1263,11 +1263,13 @@ h2 {
 }
 
 .wrap .product > .top .banner.comfort {
-  background: url('/../img/comfort-hero.jpg') no-repeat center center;
+  background: url('/demo-smixin/img/comfort-hero.jpg') no-repeat center center;
+  /*background: url('/../img/comfort-hero.jpg') no-repeat center center;*/
 }
 
 .wrap .product > .top .banner.compact {
-  background: url('/../img/compact-hero.jpg') no-repeat center center;
+  background: url('/demo-smixi/img/compact-hero.jpg') no-repeat center center;
+  /*background: url('/../img/compact-hero.jpg') no-repeat center center;*/
 }
 
 .wrap .product .discover {

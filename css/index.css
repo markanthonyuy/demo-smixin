@@ -432,24 +432,38 @@ h2 {
 
 .wrap .features .features-body .features-body-wrap .top .more-padding,
 .wrap .features .features-body .features-body-wrap .bottom .more-padding {
-  padding: 20px 80px;
+  padding: 0 70px 20px;
+}
+
+.wrap .features .features-body .features-body-wrap figure {
+  position: relative;
+  height: 100px;
+}
+
+.wrap .features .features-body .features-body-wrap figure img {
+  position: absolute;  
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
 }
 
 .wrap .features .features-body .features-body-wrap .top .less-soap figure {
-  margin-bottom: 45px;
+  margin-bottom: 32px;
 }
 
-.wrap .features .features-body .features-body-wrap .top .less-soap figure img:first-child {
-  margin-right: 30px;
+.wrap .features .features-body .features-body-wrap .top .less-soap-paper figure img:first-child {
+  margin-right: 135px;
 }
 
-.wrap .features .features-body .features-body-wrap .top .less-paper figure {
-  margin-bottom: 55px;
+.wrap .features .features-body .features-body-wrap .top .less-soap-paper figure img:last-child {
+  margin-left: 135px;
 }
 
-.wrap .features .features-body .features-body-wrap .top .less-soap .footnote {
+.wrap .features .features-body .features-body-wrap .top .less-soap-paper .footnote {
   display: block;
-  margin-top: 8px;
+  margin: 8px 0;
   font-size: 11px;
   font-weight: 400;
 }
@@ -494,6 +508,15 @@ h2 {
   line-height: 26px;
   font-weight: 700;
   color: #006580;
+}
+
+@media screen and (max-width: 992px) {
+
+  .wrap .features .features-body .features-body-wrap .top .less-soap-paper figure {
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ===============================================================*/
@@ -1036,7 +1059,7 @@ h2 {
   margin-bottom: 30px;
   display: block;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 900;
   border-bottom: none;
   text-align: center;
 }
@@ -1083,7 +1106,7 @@ h2 {
 
 .bottom-page-nav {
   width: 1100px;
-  padding: 30px 10px;
+  padding: 30px 30px;
   margin: 0 auto;
 }
 
@@ -1099,6 +1122,7 @@ h2 {
 
 .bottom-page-nav a svg {
   width: 17px;
+  vertical-align: -12px;
 }
 
 .bottom-page-nav a:hover svg path {
@@ -1107,6 +1131,8 @@ h2 {
 
 .bottom-page-nav a .text {
   padding: 0 15px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .bottom-page-nav.for-products {
@@ -1164,7 +1190,7 @@ h2 {
 /* ===============================================================*/
 
 .wrap > .product {
-  padding: 40px 0;
+  padding: 0;
 }
 
 .wrap .product > .top {
@@ -1177,14 +1203,18 @@ h2 {
 
 .wrap .product > .top .info h2 {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 900;
   border-bottom: none;
 }
 
 .wrap .product > .top .info p {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
+}
+
+.wrap .product > .top .info p.combi.mobile {
+  display: none;
 }
 
 .wrap .product > .top .info span {
@@ -1194,7 +1224,7 @@ h2 {
 }
 
 .wrap .product > .top .info figure {
-  margin: 50px 0 0 30px;
+  margin: 20px 0 0 30px;
   text-align: left;
 }
 
@@ -1203,14 +1233,25 @@ h2 {
 }
 
 .wrap .product > .top .banner {
-  width: 78%;
-  height: 812px;
+  width: 70%;
+  height: 650px;
   background-size: cover;
 }
 
 .wrap .product > .top .banner.combi {
+  position: relative;
   /*background: url('/demo-smixin/img/combi-hero.jpg') no-repeat center center;*/
   background: url('/../img/combi-hero.jpg') no-repeat center center;
+}
+
+.wrap .product > .top .banner .text {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  color: #006580;
 }
 
 .wrap .product > .top .banner.comfort {
@@ -1255,10 +1296,50 @@ h2 {
 
 .wrap .product .how-it-works h2 {
   margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.wrap .product .how-it-works .steps .step {
+.wrap .product .how-it-works .steps {
+  position: relative;
+}
 
+.wrap .product .how-it-works .steps .line {
+  position: absolute;
+  top: 90px;
+  width: 160px;
+  height: 2px;
+  display: block;
+  background: #00AAB4;
+}
+
+.wrap .product .how-it-works .steps .line-1 {
+  left: 15%;
+  z-index: 0;
+}
+
+.wrap .product .how-it-works .steps .line-2 {
+  left: 43%;
+}
+
+.wrap .product .how-it-works .steps .line-3 {
+  left: 70%;
+}
+
+.wrap .product .how-it-works .steps .line-1.compact {
+  left: 32%;
+}
+
+.wrap .product .how-it-works .steps .line-2.compact {
+  left: 55%;
+}
+
+.wrap .product .how-it-works .steps .line-1.comfort {
+  left: 42%;
+
+}
+.wrap .product .how-it-works .steps .step {
+  z-index: 1;
 }
 
 .wrap .product .how-it-works .steps .step.more-padding {
@@ -1329,6 +1410,7 @@ h2 {
 }
 
 .wrap .product .key-features .key-features-wrap .info h4.download {
+  padding-top: 20px;
   border-bottom: none;
 }
 
@@ -1355,7 +1437,7 @@ h2 {
 }
 
 .wrap .product .key-features .key-features-wrap .info .buttons button {
-  width: 40%;
+  width: 47%;
   padding: 8px 15px;
   border: 2px solid #006580;
   border-radius: 12px;
@@ -1367,7 +1449,7 @@ h2 {
 }
 
 .wrap .product .key-features .key-features-wrap .info .buttons button:first-child {
-  margin-right: 5%;
+  margin-right: 3%;
 }
 
 .wrap .product .key-features .key-features-wrap .info .buttons button:hover {
@@ -1402,6 +1484,10 @@ h2 {
 }
 
 @media screen and (max-width: 992px) {
+
+  .wrap > .product {
+    padding: 40px 0;
+  }
   
   .main-header.pages {
     min-height: 100px;
@@ -1410,12 +1496,6 @@ h2 {
   .wrap .product > .top .info figure {
     text-align: center;
     margin-left: 0;
-  }
-
-  .wrap .product > .top .info {
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
   }
 
   .wrap .product > .top .banner {
@@ -1440,8 +1520,36 @@ h2 {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .wrap .product .how-it-works .steps .step {
+    margin: 20px;
+  }
+
+  .wrap .product .how-it-works .steps .step figure {
+    margin-top: 30px;
+  }
+
+  .wrap .product .how-it-works .steps .line {
+    display: none;
+  } 
 }
 
+@media screen and (max-width: 991px) {
+
+  .wrap .product > .top .info {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .wrap .product > .top .info p.combi {
+    display: none;
+  }
+
+  .wrap .product > .top .info p.combi.mobile {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 800px) {
 
@@ -1449,6 +1557,50 @@ h2 {
     height: auto;
   }
 }
+
+@media screen and (max-width: 580px) {
+
+  .wrap .product .key-features .key-features-wrap .info .buttons button {
+    width: 48%;
+    margin: 0 !important;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .wrap .product .key-features .key-features-wrap .info .buttons button {
+    width: 100%;
+    margin-bottom: 5px !important;
+    font-size: 15px;
+  }
+}
+
+/* ===============================================================*/
+/* ===============================================================*/
+/* =========================== IMAGES ============================*/
+/* ===============================================================*/
+/* ===============================================================*/
+
+.less-water figure img {
+  width: 85px !important;
+}
+
+.less-soap figure img {
+  width: 95px !important;
+}
+
+.less-paper figure img {
+  width: 90px !important;
+}
+
+.remote figure img {
+  width: 90px !important;
+}
+.no-contaiminates figure img {
+  width: 90px !important;
+}
+
 /* ===============================================================*/
 /* ===============================================================*/
 /* =========================== MEDIA =============================*/
@@ -1504,6 +1656,10 @@ h2 {
   .main-header .top .top-wrap nav {
     display: none !important;
   }
+
+  .wrap .features .features-body .features-body-wrap .top {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 978px) {
@@ -1522,7 +1678,7 @@ h2 {
 
   .wrap .features .features-body .features-body-wrap .top div, 
   .wrap .features .features-body .features-body-wrap .bottom div {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .wrap .features .features-body .features-body-wrap .top .less-soap {

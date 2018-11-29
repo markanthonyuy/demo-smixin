@@ -91,6 +91,8 @@ $(function() {
     if($(this).outerWidth() > 992) {
       $('.m-menu').slideUp(100);
       $('.hamburger').removeClass('is-active');
+    } else {
+      $('.main-header .top').removeClass('sticky');
     }
   }, 100));
 
@@ -100,5 +102,17 @@ $(function() {
     $('.contact-us .contact-form .products .product').removeClass('active')
     $(this).addClass('active');
     $('form input[name="product"]').val($(this).data('product'));
+  });
+
+  $(document).on('scroll', function() {
+    if($(this).outerWidth() > 992) {
+      if($(window).scrollTop() >= 129) {
+        $('.main-header .top').addClass('sticky');
+      } else {
+        $('.main-header .top').removeClass('sticky');
+      }
+    } else {
+      $('.main-header .top').removeClass('sticky');
+    }
   });
 });

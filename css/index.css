@@ -1051,7 +1051,7 @@ h2 {
 .wrap .techopacks {
   width: 100%;
   min-height: 1200px;
-  background: url('../../img/bg-cherryblossom.jpg') no-repeat left 300px;
+  background: url('/demo-smixin/img/bg-cherryblossom.jpg') no-repeat left 300px;
   background-size: cover;
 }
 

@@ -173,7 +173,7 @@ input:-webkit-autofill:active  {
 }
 
 .main-header .top .top-wrap h1 {
-  margin: 0 0 0 77px;
+  margin: 0 0 0 61px;
 }
 
 .main-header .top .top-wrap h1 a img {
@@ -276,9 +276,9 @@ input:-webkit-autofill:active  {
 }
 
 .main-header .body .tagline .big {
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 54px;
   color: #006580;
 }
 
@@ -288,7 +288,7 @@ input:-webkit-autofill:active  {
 
 .main-header .body .tagline .subtext {
   color: #000;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 

@@ -71,7 +71,11 @@ $(function() {
     $('.bg-switch').removeClass('active');
     $this.addClass('active');
 
-    $('.main-header').css('background-image', 'url(img/hero-banner-' + target + '.jpg)');
+    if($(window).outerWidth() > 768) {
+      $('.main-header').css('background-image', 'url(img/hero-banner-' + target + '.jpg)');
+    } else {
+      $('.main-header').css('background-image', 'url(img/bg-hero-mobile-' + target + '.jpg)');
+    }
   });
 
   timer = setInterval(function() {
@@ -95,6 +99,14 @@ $(function() {
       $('.main-header .top').removeClass('sticky');
     }
   }, 100));
+
+  if(window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    if($(window).outerWidth() > 992) {
+      $('.main-header').css('background-image', 'url(img/hero-banner-1.jpg)');
+    } else {
+      $('.main-header').css('background-image', 'url(img/bg-hero-mobile-1.jpg)');
+    }
+  }
 
   /* Contact product selected */
 

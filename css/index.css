@@ -386,6 +386,10 @@ input:-webkit-autofill:active  {
     top: auto;
     bottom: 20px;
   }
+
+  .main-header .body .tagline .subtext {
+    padding-right: 50px;
+  }
 }
 
 /* ===============================================================*/

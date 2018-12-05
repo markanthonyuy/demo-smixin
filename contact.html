@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/datepicker.css">
     <link rel="stylesheet" href="https://use.typekit.net/aqa5wzu.css">
   </head>
   <body>
@@ -166,7 +167,7 @@
             <input type="email" placeholder="Email" name="email">
             <input type="text" placeholder="Contact No." name="contact-no">
             <input type="text" placeholder="Contact Address" name="contact-add">
-            <input type="date" placeholder="Preferred Date for Demo" name="date">
+            <input type="text" placeholder="Preferred Date for Demo" name="date" data-toggle="datepicker">
             <input type="hidden" name="product" value="">
             <button type="submit" class="btn">Request Demo</button>
           </form>
@@ -186,7 +187,7 @@
         <div class="mobile">
           <span><a href="#">Careers</a></span> |
           <span><a href="contact.html">Contact Us</a></span> |
-          <span><a href="https://www.facebook.com/SmixinSingapore/">Facebook</a></span><br>
+          <span><a href="https://www.facebook.com/SmixinSingapore/" target="_blank">Facebook</a></span><br>
           <span><a href="#">FAQ</a></span> |
           <span><a href="#">T&Cs</a></span>
         </div>
@@ -199,7 +200,7 @@
           </script>
         </p>
       </div>
-      <p class="bottom">&copy;2018-2019 Copyright Jeff Suplies Pte Ltd <span class="popfolio">Site by <a href="#">POPfolio</a></span></p>
+      <p class="bottom">&copy;2018-2019 Copyright Jeff Supplies Pte Ltd <span class="popfolio">Site by <a href="#">POPfolio</a></span></p>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -207,6 +208,14 @@
     <script src="js/jquery.slim.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/datepicker.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      $(function() {
+        $('[data-toggle="datepicker"]').datepicker({
+          autoHide: true
+        });
+      })
+    </script>
   </body>
 </html>

@@ -120,11 +120,14 @@ $(function() {
     if($(this).outerWidth() > 992) {
       if($(window).scrollTop() >= 129) {
         $('.main-header .top').addClass('sticky');
+        $('.main-header').css('padding-top', '129px');
       } else {
         $('.main-header .top').removeClass('sticky');
+        $('.main-header').css('padding-top', '0');
       }
     } else {
       $('.main-header .top').removeClass('sticky');
+      $('.main-header').css('padding-top', '0');
     }
   });
 });

@@ -117,7 +117,7 @@ $(function() {
   });
 
   $(document).on('scroll', function() {
-    if($(this).outerWidth() > 992) {
+    if($(window).outerWidth() > 992) {
       if($(window).scrollTop() >= 129) {
         $('.main-header .top').addClass('sticky');
         $('.main-header').css('padding-top', '129px');
